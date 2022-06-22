@@ -18,14 +18,17 @@ body::-webkit-scrollbar {
     overflow: hidden;
     object-fit: cover; 
     object-position: 100% 0;
+    text-align: center;
 }
 #front h1{
     position: absolute;
     font-size: 10vh;
     padding: 0 ;
     transition: 1s;
-    margin: 0 29%;
-    bottom: 50vh;
+    bottom: 30vh;
+    color: #EEEEEE;
+    text-align: center;
+    width: 100%;
 }
 
 header{
@@ -54,9 +57,9 @@ header h2 {
 .separation{
     width: 100%;
     height: 15vh;
-    position: absolute;
+    position: relative;
+    top: -1vh;
     background-color: #00ADB5;
-    top: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,3 +110,43 @@ nav{
   .Hlinks:hover::before {
     width: 100%;
   }
+
+  #Blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #TempPost{
+    background: #EEEEEE;
+  }
+  .Bpost{
+    width: 98%;
+    position: relative;
+    display: block;
+    margin: 2vh;
+    border: #393e4662;
+    border-style: solid;
+    border-radius: 5vh;
+    border-width: thin;
+  }
+.Bpost h3{
+    text-align: center;
+    font-size: 3vh;
+}
+.Bpost h5{
+    text-align: center;
+    font-size: 1.5vh;
+    margin: 0 5vh;
+}
+
+.Bpost p {
+    margin: 1.5vh 3%;
+}
+
+.Bpost img {
+    margin: 2vh auto;
+    display: block;
+}

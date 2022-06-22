@@ -7,7 +7,7 @@ var r = document.querySelector(':root');
 
 function doSomething(scrollPos) {
     console.log(scrollPos)
-    document.getElementById("1").style.bottom = (50-10*Math.log10(scrollPos)).toString()+"vh"
+    document.getElementById("1").style.bottom = (30-10*Math.log10(scrollPos)).toString()+"vh"
     
     if (scrollPos != 0){
       document.getElementById("header").style.height = "10vh"
